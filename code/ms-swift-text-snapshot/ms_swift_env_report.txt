@@ -1,0 +1,201 @@
+================ BASIC ================
+Sun Jul 26 03:37:58 AM UTC 2026
+HOST: host03
+PWD:  /data/lcx/foxx/train/ms-swift
+CONDA_DEFAULT_ENV: ms-swift-gemma4
+CONDA_PREFIX: /data/lcx/miniconda3/envs/ms-swift-gemma4
+PYTHONPATH: 
+
+================ EXECUTABLES ================
+/data/lcx/miniconda3/envs/ms-swift-gemma4/bin/python
+/data/lcx/miniconda3/envs/ms-swift-gemma4/bin/pip
+/data/lcx/miniconda3/envs/ms-swift-gemma4/bin/swift
+Python 3.12.13
+pip 26.1.2 from /data/lcx/miniconda3/envs/ms-swift-gemma4/lib/python3.12/site-packages/pip (python 3.12)
+Traceback (most recent call last):
+  File "/data/lcx/miniconda3/envs/ms-swift-gemma4/bin/swift", line 6, in <module>
+    sys.exit(cli_main())
+             ^^^^^^^^^^
+  File "/data/lcx/foxx/train/ms-swift/swift/cli/main.py", line 91, in cli_main
+    file_path = importlib.util.find_spec(route_mapping[method_name]).origin
+                                         ~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: '--version'
+
+================ MS-SWIFT SOURCE ================
+python executable: /data/lcx/miniconda3/envs/ms-swift-gemma4/bin/python
+python version: 3.12.13 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:38:16) [GCC 14.3.0]
+ms-swift distribution version: 4.5.0.dev0
+swift module path: /data/lcx/foxx/train/ms-swift/swift/__init__.py
+swift module version: 4.5.0.dev0
+swift.agent_template.gemma4: /data/lcx/foxx/train/ms-swift/swift/agent_template/gemma4.py
+swift.rlhf_trainers.gkd_trainer: /data/lcx/foxx/train/ms-swift/swift/rlhf_trainers/gkd_trainer.py
+swift.template.templates.gemma: /data/lcx/foxx/train/ms-swift/swift/template/templates/gemma.py
+vllm: NOT FOUND
+flash_attn: /data/lcx/miniconda3/envs/ms-swift-gemma4/lib/python3.12/site-packages/flash_attn/__init__.py
+deepspeed: NOT FOUND
+
+================ GIT REPOSITORY ================
+true
+origin	https://github.com/modelscope/ms-swift.git (fetch)
+origin	https://github.com/modelscope/ms-swift.git (push)
+main
+dfacde23ab78117e41efe76b9b43aa7f5513de55
+v1.2.0-3433-gdfacde23a
+--- git status, first 50 lines ---
+?? examples/models/gemma4/GUI_SFT.md
+?? examples/models/gemma4/gemma4_gui_env.sh
+?? examples/models/gemma4/gemma4_gui_full.sh
+?? examples/models/gemma4/gemma4_gui_lora.sh
+?? examples/models/gemma4/gemma4_gui_preflight.py
+?? examples/models/gemma4/gemma4_gui_preflight.sh
+?? ms_swift_env_report.txt
+
+================ PACKAGE VERSIONS ================
+ms-swift           4.5.0.dev0
+torch              2.8.0+cu128
+torchvision        0.23.0+cu128
+transformers       5.12.1
+tokenizers         0.22.2
+trl                0.29.1
+peft               0.19.1
+accelerate         1.14.0
+datasets           4.8.4
+deepspeed          NOT INSTALLED
+vllm               NOT INSTALLED
+flash-attn         2.8.3
+safetensors        0.8.0
+bitsandbytes       NOT INSTALLED
+liger-kernel       NOT INSTALLED
+numpy              2.4.4
+pillow             11.3.0
+
+================ NVIDIA-SMI ================
+0, NVIDIA A800-SXM4-80GB, GPU-117afce0-a04c-fa70-ab7e-cbe6e7d9ee1d, 81920 MiB, 5490 MiB, 595.71.05
+1, NVIDIA A800-SXM4-80GB, GPU-93fb999a-ddb1-362e-c49e-f03ed4df2f6d, 81920 MiB, 5490 MiB, 595.71.05
+2, NVIDIA A800-SXM4-80GB, GPU-ff13f019-352e-67fb-f4c5-8813438b12f8, 81920 MiB, 81153 MiB, 595.71.05
+3, NVIDIA A800-SXM4-80GB, GPU-70ba9e42-1b3c-3408-ad2b-307b91480c6b, 81920 MiB, 5474 MiB, 595.71.05
+4, NVIDIA A800-SXM4-80GB, GPU-98d6808c-6bcb-a633-7b03-120814817bd9, 81920 MiB, 5492 MiB, 595.71.05
+5, NVIDIA A800-SXM4-80GB, GPU-27c3199c-320f-897a-5f2a-c940d19a5f25, 81920 MiB, 81153 MiB, 595.71.05
+6, NVIDIA A800-SXM4-80GB, GPU-8d1320c3-feb4-011a-af66-9feed3e48ba7, 81920 MiB, 81153 MiB, 595.71.05
+7, NVIDIA A800-SXM4-80GB, GPU-1d52987a-2452-efb5-5cce-9e05921aea48, 81920 MiB, 81153 MiB, 595.71.05
+
+================ PYTORCH CUDA ================
+torch: 2.8.0+cu128
+torch CUDA build: 12.8
+CUDA available: True
+cuDNN: 91002
+BF16 supported: True
+GPU count: 8
+GPU 0: name=NVIDIA A800-SXM4-80GB, capability=8.0, total_memory_GiB=79.25
+GPU 1: name=NVIDIA A800-SXM4-80GB, capability=8.0, total_memory_GiB=79.25
+GPU 2: name=NVIDIA A800-SXM4-80GB, capability=8.0, total_memory_GiB=79.25
+GPU 3: name=NVIDIA A800-SXM4-80GB, capability=8.0, total_memory_GiB=79.25
+GPU 4: name=NVIDIA A800-SXM4-80GB, capability=8.0, total_memory_GiB=79.25
+GPU 5: name=NVIDIA A800-SXM4-80GB, capability=8.0, total_memory_GiB=79.25
+GPU 6: name=NVIDIA A800-SXM4-80GB, capability=8.0, total_memory_GiB=79.25
+GPU 7: name=NVIDIA A800-SXM4-80GB, capability=8.0, total_memory_GiB=79.25
+
+================ SWIFT SFT PARAMETERS ================
+
+================ SWIFT GKD/RLHF PARAMETERS ================
+               [--deepspeed DEEPSPEED] [--debug DEBUG [DEBUG ...]]
+               [--model MODEL] [--model_type MODEL_TYPE]
+               [--model_revision MODEL_REVISION]
+               [--template TEMPLATE] [--system SYSTEM]
+               [--max_length MAX_LENGTH]
+               [--max_pixels MAX_PIXELS] [--agent_template AGENT_TEMPLATE]
+               [--template_backend {swift,jinja}]
+               [--model_name MODEL_NAME [MODEL_NAME ...]]
+               [--model_author MODEL_AUTHOR [MODEL_AUTHOR ...]]
+               [--max_new_tokens MAX_NEW_TOKENS] [--temperature TEMPERATURE]
+               [--model_kwargs MODEL_KWARGS]
+               [--deepspeed_autotp_size DEEPSPEED_AUTOTP_SIZE]
+               [--vllm_gpu_memory_utilization VLLM_GPU_MEMORY_UTILIZATION]
+               [--vllm_max_model_len VLLM_MAX_MODEL_LEN]
+               [--use_vllm [USE_VLLM]] [--vllm_mode {server,colocate}]
+               [--teacher_model TEACHER_MODEL]
+               [--teacher_model_type TEACHER_MODEL_TYPE]
+               [--teacher_model_revision TEACHER_MODEL_REVISION]
+               [--teacher_model_server TEACHER_MODEL_SERVER]
+               [--rlhf_type {dpo,orpo,simpo,kto,cpo,rm,ppo,grpo,gkd}]
+               [--ref_model_revision REF_MODEL_REVISION] [--beta BETA]
+               [--max_completion_length MAX_COMPLETION_LENGTH]
+               [--sft_alpha SFT_ALPHA] [--lmbda LMBDA] [--seq_kd [SEQ_KD]]
+               [--gkd_logits_topk GKD_LOGITS_TOPK]
+  --deepspeed DEEPSPEED
+  --model MODEL
+  --model_type MODEL_TYPE, --model-type MODEL_TYPE
+  --model_revision MODEL_REVISION, --model-revision MODEL_REVISION
+  --template TEMPLATE   template choices: ['chatml', 'dummy', 'emu3_gen',
+  --max_length MAX_LENGTH, --max-length MAX_LENGTH
+  --agent_template AGENT_TEMPLATE, --agent-template AGENT_TEMPLATE
+  --template_backend {swift,jinja}, --template-backend {swift,jinja}
+  --model_name MODEL_NAME [MODEL_NAME ...], --model-name MODEL_NAME [MODEL_NAME ...]
+  --model_author MODEL_AUTHOR [MODEL_AUTHOR ...], --model-author MODEL_AUTHOR [MODEL_AUTHOR ...]
+  --temperature TEMPERATURE
+  --model_kwargs MODEL_KWARGS, --model-kwargs MODEL_KWARGS
+  --deepspeed_autotp_size DEEPSPEED_AUTOTP_SIZE, --deepspeed-autotp-size DEEPSPEED_AUTOTP_SIZE
+  --vllm_gpu_memory_utilization VLLM_GPU_MEMORY_UTILIZATION, --vllm-gpu-memory-utilization VLLM_GPU_MEMORY_UTILIZATION
+  --vllm_max_model_len VLLM_MAX_MODEL_LEN, --vllm-max-model-len VLLM_MAX_MODEL_LEN
+  --use_vllm [USE_VLLM], --use-vllm [USE_VLLM]
+  --vllm_mode {server,colocate}, --vllm-mode {server,colocate}
+  --teacher_model TEACHER_MODEL, --teacher-model TEACHER_MODEL
+  --teacher_model_type TEACHER_MODEL_TYPE, --teacher-model-type TEACHER_MODEL_TYPE
+  --teacher_model_revision TEACHER_MODEL_REVISION, --teacher-model-revision TEACHER_MODEL_REVISION
+  --teacher_model_server TEACHER_MODEL_SERVER, --teacher-model-server TEACHER_MODEL_SERVER
+  --rlhf_type {dpo,orpo,simpo,kto,cpo,rm,ppo,grpo,gkd}, --rlhf-type {dpo,orpo,simpo,kto,cpo,rm,ppo,grpo,gkd}
+  --beta BETA
+  --max_completion_length MAX_COMPLETION_LENGTH, --max-completion-length MAX_COMPLETION_LENGTH
+  --sft_alpha SFT_ALPHA, --sft-alpha SFT_ALPHA
+  --lmbda LMBDA
+  --gkd_logits_topk GKD_LOGITS_TOPK, --gkd-logits-topk GKD_LOGITS_TOPK
+
+================ SWIFT DEPLOY PARAMETERS ================
+                 [--device_groups DEVICE_GROUPS] [--model MODEL]
+                 [--model_type MODEL_TYPE] [--model_revision MODEL_REVISION]
+                 [--template TEMPLATE] [--system SYSTEM]
+                 [--max_length MAX_LENGTH]
+                 [--max_pixels MAX_PIXELS] [--agent_template AGENT_TEMPLATE]
+                 [--template_backend {swift,jinja}]
+                 [--model_name MODEL_NAME [MODEL_NAME ...]]
+                 [--model_author MODEL_AUTHOR [MODEL_AUTHOR ...]]
+                 [--seed SEED] [--model_kwargs MODEL_KWARGS]
+                 [--vllm_gpu_memory_utilization VLLM_GPU_MEMORY_UTILIZATION]
+                 [--vllm_tensor_parallel_size VLLM_TENSOR_PARALLEL_SIZE]
+                 [--vllm_max_model_len VLLM_MAX_MODEL_LEN]
+                 [--infer_backend {vllm,transformers,sglang,lmdeploy,pt}]
+                 [--no_reranker_use_activation] [--host HOST] [--port PORT]
+                 [--max_logprobs MAX_LOGPROBS]
+  --model MODEL
+  --model_type MODEL_TYPE, --model-type MODEL_TYPE
+  --model_revision MODEL_REVISION, --model-revision MODEL_REVISION
+  --template TEMPLATE   template choices: ['chatml', 'dummy', 'emu3_gen',
+  --max_length MAX_LENGTH, --max-length MAX_LENGTH
+  --agent_template AGENT_TEMPLATE, --agent-template AGENT_TEMPLATE
+  --template_backend {swift,jinja}, --template-backend {swift,jinja}
+  --model_name MODEL_NAME [MODEL_NAME ...], --model-name MODEL_NAME [MODEL_NAME ...]
+  --model_author MODEL_AUTHOR [MODEL_AUTHOR ...], --model-author MODEL_AUTHOR [MODEL_AUTHOR ...]
+  --model_kwargs MODEL_KWARGS, --model-kwargs MODEL_KWARGS
+  --vllm_gpu_memory_utilization VLLM_GPU_MEMORY_UTILIZATION, --vllm-gpu-memory-utilization VLLM_GPU_MEMORY_UTILIZATION
+  --vllm_tensor_parallel_size VLLM_TENSOR_PARALLEL_SIZE, --vllm-tensor-parallel-size VLLM_TENSOR_PARALLEL_SIZE
+  --vllm_max_model_len VLLM_MAX_MODEL_LEN, --vllm-max-model-len VLLM_MAX_MODEL_LEN
+  --infer_backend {vllm,transformers,sglang,lmdeploy,pt}, --infer-backend {vllm,transformers,sglang,lmdeploy,pt}
+  --port PORT
+  --max_logprobs MAX_LOGPROBS, --max-logprobs MAX_LOGPROBS
+
+================ FLASH ATTENTION ================
+flash_attn import: OK
+flash_attn version: 2.8.3
+
+================ DEEPSPEED ================
+deepspeed: command not found
+
+================ VLLM ================
+vllm import: FAILED
+ModuleNotFoundError("No module named 'vllm'")
+
+================ DISK ================
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/md0         14T  9.9T  4.2T  71% /data
+
+================ END ================
