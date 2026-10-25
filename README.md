@@ -19,7 +19,7 @@
 ## 环境依赖
 
 ms-swift
-对于监控训练中的top K个token占学生在整个vocab上的原始概率比重Pst需要用gkd_trainer,gkd_trainer_bkd为原始的copy
+对于监控训练中的top K个token占学生在整个vocab上的原始概率比重Pst需要用gkd_trainer.py,gkd_trainer.py.bkd为原始的copy
 
 
 
